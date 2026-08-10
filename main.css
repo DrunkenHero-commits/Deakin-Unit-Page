@@ -88,4 +88,9 @@ p {
   color: #003366;
   text-decoration: underline;
 }
-
+.security-note{
+    margin-top:15px;
+    padding:12px;
+    background:#fff3cd;
+    border-left:4px solid orange;
+}
