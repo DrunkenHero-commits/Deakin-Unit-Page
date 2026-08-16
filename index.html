@@ -3,46 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SIT223 - Unit Page</title>
+    <title>SIT223-SIT753 - Professional Practice in IT</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
 <body>
 
-    <div class="container">
+    <!--Main Content-->
+    <main class="container">
+
         <h1>SIT223-SIT753 - Professional Practice in IT</h1>
 
-        
+        <!-- Unit content (Team Leader) -->
+        <section>
+            <h2>Content</h2>
+            <p>To be successful, IT graduates need to understand the use of industry tools and
+               practices, the ways these tools work and connect together, and the underlying
+               professional, ethical, and teamwork knowledge and skills needed to put these into
+               practice in a professional manner.</p>
+        </section>
 
-        <h2>Content</h2>
-        <p>To be successful, IT graduates need to understand the use of industry tools and practices,
-            the ways these tools work and connect together, and the underlying professional, ethical,
-            and teamwork knowledge and skills needed to put these into practice in a professional manner.</p>
+        <!-- Hurdle requirement (Team Leader) -->
+        <section>
+            <h2>Hurdle requirement</h2>
+            <p>To be eligible to obtain a pass in this unit, students must meet certain milestones
+               as part of the portfolio.</p>
+        </section>
 
-        <h3>Important Links</h3>
-        <ul class="link-list">
-            <li>
-                <a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Official Deakin Current Student Fees page">
-                    > Current students fees
-                </a>
-            </li>
-            <li>
-                <a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees/international-students/international-student-fees"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Official Deakin International Student Fees page">
-                    > International student fees
-                </a>    
-            </li>
-        </ul>
+        <!--
+          Enrolment & fee links (Team Leader). Links target the named iframe below so the page loads inside this page instead of a new tab. 
+        -->
+        <section>
+            <h2>Important links</h2>
+            <p>Pick a page to view it in the frame below, no new tab.</p>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees"
+                       target="feeframe"
+                       title="Official Deakin current student fees page">
+                       Current student fees
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.deakin.edu.au/students/enrolment-and-fees/fees/international-students/international-student-fees"
+                       target="feeframe"
+                       title="Official Deakin international student fees page">
+                       International student fees
+                    </a>
+                </li>
+            </ul>
+            
+            <iframe name="feeframe"
+                    class="content-frame"
+                    title="Deakin fees page preview"
+                    src="https://www.deakin.edu.au/students/enrolment-and-fees/fees"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"></iframe>
+        </section>
 
-        
+    </main>
 
-
-    </div>
+    <footer class="page-footer">
+        <p>SIT223-SIT753 Professional Practice in IT: Unit page (Sprint 1)</p>
+    </footer>
 
 </body>
 

@@ -1,4 +1,4 @@
-/* Base styles & page layout */
+/* -- Page & body -- */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f6f8;
@@ -7,70 +7,62 @@ body {
   padding: 40px 20px;
 }
 
-/* Central container card */
+/* -- Central content card --*/
 .container {
-  max-width: 1920px;
+  max-width: 960px;
+
   margin: 0 auto;
   background: #ffffff;
-  padding: 32px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 32px 36px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-top: 5px solid #004b49;
+
 }
 
+/* -- In-page viewer -- */
 .content-frame {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #e2e6ea;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
-
-/* Headings */
+/* -- Headings -- */
 h1 {
-  font-size: 32px;
-  color: #004b49; /* Deakin-inspired teal tint */
+  font-size: 30px;
+  color: #004b49;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  line-height: 1.3;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 21px;
   color: #222222;
-  margin-top: 24px;
-  border-bottom: 2px solid #eef0f2;
+  margin-top: 28px;
   padding-bottom: 8px;
+  border-bottom: 2px solid #eef0f2;
 }
 
-h3 {
-  font-size: 18px;
-  color: #444444;
-  margin-top: 24px;
-}
-
-/* Body text */
+/* -- Body text -- */
 p {
   font-size: 15px;
-  line-height: 1.6; /* Makes reading long paragraphs much easier */
+  line-height: 1.65;
   color: #555555;
 }
 
-/* Temporary branch tag styling */
-.badge {
-  display: inline-block;
-  background-color: #fff3cd;
-  color: #856404;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-bottom: 16px;
+/* -- Section spacing -- */
+section {
+  margin-bottom: 8px;
 }
 
-/* Link list styling */
+/* -- Link list -- */
 .link-list {
-  list-style: none; /* Removes standard bullet points */
+  list-style: none;
   padding: 0;
+  margin: 12px 0 0;
 }
 
 .link-list li {
@@ -84,13 +76,20 @@ p {
   transition: color 0.2s ease;
 }
 
-.link-list a:hover {
+.link-list a:hover,
+.link-list a:focus {
   color: #003366;
   text-decoration: underline;
 }
-.security-note{
-    margin-top:15px;
-    padding:12px;
-    background:#fff3cd;
-    border-left:4px solid orange;
+
+/* -- Footer -- */
+.page-footer {
+  max-width: 960px;
+  margin: 16px auto 0;
+  text-align: center;
+}
+
+.page-footer p {
+  font-size: 12px;
+  color: #8a9199;
 }
